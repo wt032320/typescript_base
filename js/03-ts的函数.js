@@ -51,15 +51,31 @@ function getData1(name, age) {
     }
 }
 // 3.4 剩余参数 三点运算浮接收形参传过来的值
-function sum() {
+function sum(a) {
     var result = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        result[_i] = arguments[_i];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        result[_i - 1] = arguments[_i];
     }
-    var sum = 0;
+    var sum = a;
     for (var i = 0; i < result.length; i++) {
         sum += result[i];
     }
     return sum;
 }
 sum(1, 3, 4, 5);
+function getName(str) {
+    if (typeof str === 'string') {
+        return 'my name is' + str;
+    }
+    else {
+        return 'i am' + str + 'years old';
+    }
+}
+function ass(name, age) {
+    if (age) {
+        return 'my name is' + name + 'i am' + age + 'years old';
+    }
+    else {
+        return 'my name is' + name;
+    }
+}

@@ -65,7 +65,7 @@ function sum(a:number, ...result:number[]):number {
 sum(1, 3, 4, 5)
 
 // 3.5 函数重载
-// typescript中的重载：通过为同一个函数提供多个返回值类型定义来实现多中功能的目的
+// typescript中的重载：通过为同一个函数提供多个返回值类型定义来实现多种功能的目的
 // ts为了兼容es5 以及 es6 重载的写法和java中有区别
 // es5中出现同名的方法，下面的会替换上面的方法
 

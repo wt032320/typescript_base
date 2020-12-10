@@ -31,7 +31,7 @@ function fn() {
 // 3.2 方法可选参数
 // es5中方法的实参和形参可以不一样，但是ts中必须一样，如果不一样就需要配置可选参数
 // 注意： 可选参数必须配置到参数的最后面
-function getData(name, age) {
+function getData12(name, age) {
     if (age) {
         return name + "---" + age;
     }
@@ -41,7 +41,7 @@ function getData(name, age) {
 }
 // 3.3 默认参数
 // es5中没办法设置默认参数，es6和ts中都可以设置默认参数
-function getData1(name, age) {
+function getDatal(name, age) {
     if (age === void 0) { age = 29; }
     if (age) {
         return name + "---" + age;
